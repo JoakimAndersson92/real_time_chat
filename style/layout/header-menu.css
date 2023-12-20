@@ -1,0 +1,9 @@
+@import url(./colors.css);
+#header {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primary-1);
+}
