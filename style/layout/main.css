@@ -1,0 +1,17 @@
+@import url(./colors.css);
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Sofadi+One&display=swap');
+
+:root {
+    color: rgb(235, 235, 235);
+    font-family: 'Sofadi One';
+}
+
+body {
+    background-color: var(--color-primary-0);
+    min-height: 100vh;
+}
+
+.container {
+    padding: 5vh 10vw 5vh 10vw;
+    min-height: 100vh;
+}
