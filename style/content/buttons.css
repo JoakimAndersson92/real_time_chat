@@ -1,0 +1,26 @@
+@import url(../layout/colors.css);
+
+@keyframes pulse{
+    from {
+        transform : scale(1, 1); 
+    }
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+#chat-board-button {
+    background-color: var(--color-primary-4);
+    color: var(--text-color);
+    width: 19rem;
+    height: 5rem;
+    margin-top: 3rem;
+    transform: skew(7deg, 2deg);
+    border: 7px black solid;
+    border-radius: 1rem;
+    font-family: 'Sofadi One';
+    animation-duration: 2s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
