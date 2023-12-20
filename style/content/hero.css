@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+.hero {
+max-height: 400px;
+position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 8rem;
+  font-family: 'Knewave', sans-serif;
+}
+.hero-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
