@@ -4,13 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/style/layout/header.css" defer>
+    <link rel="stylesheet" type="text/css" href="/style/layout/header-menu.css">
+    <link rel="stylesheet" type="text/css" href="/style/layout/main.css">
+    <link rel="stylesheet" type="text/css" href="/style/content/hero.css">
+    <link rel="stylesheet" type="text/css" href="/style/content/section.css">
+    <link rel="stylesheet" type="text/css" href="/style/content/arrowAnim.css">
+    <link rel="stylesheet" type="text/css" href="/style/content/buttons.css">
 </head>
 <body>
 
     <header>
         <%- include('layout/header') %>
     </header>
-    <h1><%= title %></h1>
+    <div class="hero">
+        <img class="hero-image" src="../images/DALL·E 2023-12-20 10.57.50 - Create a minimalist hero image for a webpage titled 'Real Time Chat', focusing on a clean and clear design. The color scheme should include shades of .png"/>
+        <h1 class="hero-text"><%= title %></h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Join the chat!</h2>
+            <div class="arrow-animation-down">
+                <div class="right-arrow"></div>
+                <div class="left-arrow"></div>
+            </div>
+            <button id="chat-board-button">Go to Chat Board!</button>
+        </div>
+    </div>
 </body>
 </html>
