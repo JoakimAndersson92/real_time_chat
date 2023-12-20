@@ -1,0 +1,45 @@
+@keyframes moveDown {
+  from {
+    top : 0;
+  }
+  to {
+    top : 30px;
+  }
+}
+
+.arrow-animation-down {
+  position: relative;
+  height: 5rem;
+  width: 1rem;
+  background-color: rgb(235, 235, 235);
+  border-top: 3rem;
+  border-width: 3px;
+  border-radius: 1rem;
+  animation-duration: 0.5s;
+  animation-name: moveDown;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  transform: skew(5deg, 342deg)
+}
+
+.right-arrow {
+  position: absolute;
+  top: 2.35rem;
+  left: 0.8rem;
+  width: 1rem;
+  height: 3rem;
+  border-radius: 1rem;
+  transform: rotate(45deg);
+  background-color: rgb(235, 235, 235);
+}
+.left-arrow {
+  position: absolute;
+  top: 2.35rem;
+  left: -0.8rem;
+  width: 1rem;
+  height: 3rem;
+  border-radius: 1rem;
+  transform: rotate(-45deg);
+  background-color: rgb(235, 235, 235);
+}
