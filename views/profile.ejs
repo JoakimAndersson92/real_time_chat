@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/style/layout/header-menu.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/style/layout/main.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/section.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/text.css" />
+    <link rel="stylesheet" type="text/css" href="/style/layout/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/buttons.css" />
+  </head>
+  <body>
+    <header><%- include('layout/header') %></header>
+
+    <div class="container">
+      <div class="section">
+        <h1>Your Profile</h1>
+        <div>
+          <h3>Email</h3>
+          <p><%= cresidentials.email %></p>
+        </div>
+        <div>
+          <h3>Avatar</h3>
+          <img src="<%= cresidentials.avatar%>"/>
+        </div>
+      </div>
+      <div class="section"></div>
+      <div class="section"></div>
+    </div>
+    <footer><%- include('layout/footer') %></footer>
+  </body>
+</html>
