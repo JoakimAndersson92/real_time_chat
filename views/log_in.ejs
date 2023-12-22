@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/style/layout/header-menu.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/style/layout/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/style/content/login-form.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/style/content/hero.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/section.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/text.css" />
+    <link rel="stylesheet" type="text/css" href="/style/layout/footer.css" />
+    <link rel="stylesheet" type="text/css" href="/style/content/buttons.css" />
+    <title>Log In</title>
+  </head>
+  <body>
+    <header><%- include('layout/header') %></header>
+    <div class="container">
+      <div class="section">
+        <form class="login-form">
+          <div>
+            <label for="username">username: </label>
+            <input type="text" name="username" />
+          </div>
+          <div>
+            <label for="password">password: </label>
+          <input type="password" name="password" />
+        </div>
+        <div>
+          <button class="button" type="submit">Log In</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    <footer><%- include('layout/footer') %></footer>
+  </body>
+</html>
