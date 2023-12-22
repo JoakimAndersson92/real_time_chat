@@ -1,7 +1,9 @@
+@import url(../layout/colors.css);
 .section {
     display: flex;
     flex-direction: column;
     flex: 1 1 0%;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
