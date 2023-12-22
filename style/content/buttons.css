@@ -10,6 +10,7 @@
 }
 
 #chat-board-button {
+    position: relative;
     background-color: var(--color-primary-4);
     color: var(--text-color);
     width: 19rem;
@@ -24,3 +25,11 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+#chat-board-button:active {
+    top: 2px;
+} 
+
+#chat-board-button:hover {
+    background-color: var(--color-primary-3);
+}
+
