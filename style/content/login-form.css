@@ -1,0 +1,21 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-self: flex-start;
+    width: 50%;
+    height: 15rem;
+}
+
+.login-form input {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    height: 1.5rem;
+}
+
+.login-form button {
+    width: 20%;
+    height: 2rem;
+    border-radius: 1rem;
+}
