@@ -1,35 +1,86 @@
 @import url(../layout/colors.css);
 
-@keyframes pulse{
-    from {
-        transform : scale(1, 1); 
-    }
-    to {
-        transform: scale(1.1, 1.1);
-    }
+@keyframes pulse {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(1.1, 1.1);
+  }
 }
 
 #chat-board-button {
-    position: relative;
-    background-color: var(--color-primary-4);
-    color: var(--text-color);
-    width: 19rem;
-    height: 5rem;
-    margin-top: 3rem;
-    transform: skew(7deg, 2deg);
-    border: 7px black solid;
-    border-radius: 1rem;
-    font-family: 'Sofadi One';
-    animation-duration: 2s;
-    animation-name: pulse;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--color-primary-4);
+  color: var(--text-color);
+  width: 19rem;
+  height: 5rem;
+  margin-top: 3rem;
+  transform: skew(7deg, 2deg);
+  border: 7px black solid;
+  border-radius: 1rem;
+  font-family: "Sofadi One";
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 #chat-board-button:active {
-    top: 2px;
-} 
-
-#chat-board-button:hover {
-    background-color: var(--color-primary-3);
+  top: 2px;
 }
 
+#chat-board-button:hover {
+  background-color: var(--color-primary-3);
+}
+
+.hamburger-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.hamburger-menu div {
+  display: none;
+  position: absolute;
+  top: 4.5rem;
+  left: -3rem;
+  z-index: 50;
+  border: 3px solid black;
+  background-color: white;
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+}
+.hamburger-menu p {
+  color: black;
+}
+
+.hamburger-menu-image {
+  width: 6rem;
+  height: 6rem;
+}
+.hamburger-menu-image:hover {
+  color: var(--color-primary-3);
+}
+.hamburger-menu-image:active {
+  transform: scale(1.1, 1.1);
+}
+
+.regularButton {
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-family: "Sofadi One";
+  background-color: var(--color-primary-3);
+  color: white;
+}
+
+.regularButton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.regularButton:active {
+  transform: scale(1, 1);
+}
